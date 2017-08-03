@@ -35,7 +35,6 @@ class ImageBlobFactory implements ImageBlobFactoryInterface
         }
 
         if (empty($cloudinaryImage)) {
-            var_dump('NOT FOUND ' . $identifier);
             $identifier = $identifier ?? Algorithms::generateUUID();
             $extension = MediaTypes::getFilenameExtensionFromMediaType($blobMetadata->getMediaType());
             $cloudinaryImage = $this->uploadFile($stream, $identifier, $extension, []);

@@ -56,7 +56,6 @@ class CloudinaryImageBlob implements ImageBlobInterface
      */
     public static function fromStream($stream, BlobMetadata $blobMetadata)
     {
-        die('CREATED FROM STREAM');
         $factory = new ImageBlobFactory();
         return $factory->create($stream, $blobMetadata);
     }
