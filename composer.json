@@ -1,0 +1,21 @@
+{
+    "name": "kitsunet/cloudinary",
+    "type": "neos-package",
+    "description": "",
+    "license": "MIT",
+    "require": {
+        "kitsunet/image-manipulation": "*",
+        "neos/flow": "*",
+        "cloudinary/cloudinary_php": "~1.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kitsunet\\Cloudinary\\": "Classes"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Kitsunet\\Cloudinary\\Tests\\": "Tests"
+        }
+    }
+}

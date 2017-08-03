@@ -1,0 +1,9 @@
+Kitsunet\ImageManipulation\ImageBlob\ImageBlobFactoryInterface:
+  className: Kitsunet\Cloudinary\ImageBlobFactory
+  scope: singleton
+
+Kitsunet\ImageManipulation\ImageBlob\ImageServiceInterface:
+  className: Kitsunet\Cloudinary\ImageService
+
+Kitsunet\ImageManipulation\ImageBlob\ResourceProcessorInterface:
+  className: Kitsunet\Cloudinary\ImageService

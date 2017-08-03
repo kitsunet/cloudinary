@@ -1,0 +1,20 @@
+Kitsunet:
+  Cloudinary:
+    # The cloud_name of your cloudinary account
+    cloud_name: ''
+    credentials:
+      # The api_key for the account
+      api_key: ''
+      # The api_secret for the account
+      # Warning do not store these credentials in any accessible repository.
+      # Ideally set and reference an environment variable for example.
+      api_secret: ''
+
+Neos:
+  Media:
+    imageBlob:
+      adjustmentMapping:
+        'Neos\Media\Domain\Model\Adjustment\CropImageAdjustment':
+          class: 'Kitsunet\Cloudinary\Manipulations\CropManipulation'
+        'Neos\Media\Domain\Model\Adjustment\ResizeImageAdjustment':
+          class: 'Kitsunet\Cloudinary\Manipulations\ResizeCropManipulation'
